@@ -1,0 +1,8 @@
+# oathgate
+
+> Instant Copy-on-Write time-travel checkpoints for coding agents (`bonjoski/oathgate`, Apache-2.0, Go 1.27+).
+
+- `oathgate snap [-m <label>] [--pin]`: O(1) APFS `clonefile(2)` / Linux `FICLONE` snapshot with SQLite WAL DAG metadata and automatic `tinmind` trace bookmarking.
+- `oathgate diff [<snap-id|latest>]`: Secret-redacted diff against a prior checkpoint.
+- `oathgate rewind [<snap-id|latest>] [--record-dead-end]`: Atomic rewind with mandatory `pre-rewind` safety snapshot, per-worktree `flock`, `.git/index.lock` guard, and `coppermind` `dead_end` bridge.
+- `oathgate branch <snap-id> <target-dir>` / `list` / `pin` / `gc` / `doctor`.

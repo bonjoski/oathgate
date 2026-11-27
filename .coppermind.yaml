@@ -1,0 +1,5 @@
+scope: bonjoski/oathgate
+paths:
+  pkg/cloner: bonjoski/oathgate/cloner
+  pkg/ledger: bonjoski/oathgate/ledger
+  pkg/engine: bonjoski/oathgate/engine

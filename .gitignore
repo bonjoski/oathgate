@@ -1,0 +1,9 @@
+/oathgate
+dist/
+*.exe
+*.test
+*.out
+coverage.txt
+.fabrial/
+.oathgate/
+.DS_Store
